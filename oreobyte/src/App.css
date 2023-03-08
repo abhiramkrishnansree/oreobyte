@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+  font-family:inter;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  width:screen;
+  background-color: black;
+  padding:15px;
+  padding-right: 5%;
+  box-shadow: 2px 2px 2px 2px yellowgreen;
+}
+.navbar-container a{
+  padding-left: 40px;
+}
+.nav-logo{
+  font-weight: 800;
+}
+.screen-container{
+  background-image:linear-gradient(to bottom, rgba(25, 102, 25, 0.52), rgba(0, 0, 0, 0.73)),
+    url('pishu.jpg');
+  width: screen;
+  height:100vh;
+  background-size:cover;
+}
+.Nav-style{
+  overflow: hidden;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+}
+.picture{
+  padding-top: 200px;
+}
