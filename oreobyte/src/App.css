@@ -5,12 +5,15 @@
   margin: 0px;
   box-sizing: border-box;
 }
+span{
+  font-weight: 800;
+}
 .navbar-container{
   display: flex;
   justify-content: space-between;
   width:screen;
   background-color: black;
-  padding:15px;
+  padding:12px;
   padding-right: 5%;
   box-shadow: 2px 2px 2px 2px yellowgreen;
 }
@@ -19,13 +22,14 @@
 }
 .navbar-menu{
   display: block;
+  padding-top: 6px;
 }
-.nav-logo{
-  font-weight: 800;
+.nav-logo img{
+  width: 150px;
 }
 .screen-container{
   background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.742), rgba(0, 0, 0, 0.468)),
-    url('pishu.jpg');
+    url('cookie.jpg');
   width: screen;
   height:100vh;
   background-size:cover;
@@ -35,6 +39,7 @@
   top: 0px;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 .picture{
   padding-top: 200px;
@@ -76,11 +81,11 @@
 }
 .imager{
   padding-top:80px;
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 .new{
-  width: 40%;
+  width: 50%;
 }
 .para{
   text-align: justify;
@@ -98,7 +103,7 @@
 }
 .mainhead2{
   text-align: center;
-  color: rgb(234, 255, 0);
+  color: rgb(255, 179, 0);
   position: relative;
   top:40%;
   font-size:20px;
@@ -127,7 +132,26 @@
   color: white;
 }
 .icon-spot{
+  padding:15px;
+  width: 100%;
+}
+.icon-spot a{
   padding: 10px;
+}
+.screen5-container{
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.gal img{
+  width: 20%;
+  height: auto;
+}
+.screen5-container h2{
+  text-align: center;
+  padding:40px;
+  font-size:35px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,5 +204,32 @@
     top: 0px;
     position: fixed;
     width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding:0px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }

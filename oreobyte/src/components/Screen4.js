@@ -38,7 +38,7 @@ const Screen4 = () => {
         <Link to="/kuthara" className='a' style={{color:"white",fontSize:"18px",textDecoration:"none"}}><AiFillRedditCircle size={30}/></Link>
         <Link to="/kuthara" className='a' style={{color:"white",fontSize:"18px",textDecoration:"none"}}><AiFillTwitterCircle size={30}/></Link>
         </div>
-        <p>Copyright is governed by me@</p>
+        <p>Company Oreobyte © 2023</p>
       </div>
     </div>
   )
