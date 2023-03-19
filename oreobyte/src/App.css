@@ -24,6 +24,21 @@ span{
   display: block;
   padding-top: 6px;
 }
+.navbar-menu{
+  display:flex;
+}
+.navbar-menu li{
+  list-style-type: none;
+}
+.navbar-menu li a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-menu li a:hover{
+  color: yellow;
+  transition-duration: 0.5s;
+  font-weight:600;
+}
 .nav-logo img{
   width: 150px;
 }
