@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Screen5 = () => {
   return (
-    <div className='screen5-container'>
+    <div className='screen5-container' id='product'>
       <h2 className='Heading'>Our Products</h2>
         <div className='gal'>
           <div class="row">

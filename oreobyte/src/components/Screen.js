@@ -3,7 +3,7 @@ import React from 'react'
 
 const Screen = () => {
   return (
-    <div className='screen-container'>
+    <div className='screen-container' id='home'>
       <h2 className='mainhead'>
       Cookie heaven awaits
       </h2>

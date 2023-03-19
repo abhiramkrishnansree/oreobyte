@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Screen3 = () => {
   return (
-    <div className='screen3-container'>
+    <div className='screen3-container' id='about'>
       <div className='detail'>
         <img className='imager' src='cookie2.jpg'/>
         <div className='new'>
@@ -31,7 +31,7 @@ their own unique palate, and that's why we have a diverse collection of recipes 
 chip cookies to gluten-free, vegan, and keto-friendly options.
         </p>
         <br></br><br></br>
-        <Link to="/Webview"><span>More Info</span></Link>
+        <button><span>More Info</span></button>
         </div>
       </div>
     </div>

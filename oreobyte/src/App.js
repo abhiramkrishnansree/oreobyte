@@ -4,6 +4,7 @@ import Screen from './components/Screen';
 import Screen2 from './components/Screen2';
 import Screen3 from './components/Screen3';
 import Screen4 from './components/Screen4';
+import Sidebar from './components/Sidebar';
 
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Webview from './Webview';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Screen2" element={<Screen2/>}></Route>
         <Route path="/Screen3" element={<Screen3/>}></Route>
         <Route path="/Screen4" element={<Screen4/>}></Route>
+        <Route path="/Sidebar" element={<Sidebar/>}></Route>
     </Routes>
     </Router>
     </>

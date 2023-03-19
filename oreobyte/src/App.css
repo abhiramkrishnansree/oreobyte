@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 *{
   font-family:inter;
   margin: 0px;
@@ -7,6 +9,7 @@
 }
 span{
   font-weight: 800;
+  font-size: 15px;
 }
 .navbar-container{
   display: flex;
@@ -71,6 +74,32 @@ span{
 .services{
   width: 18%;
   text-align: justify;
+  height:55vh;
+}
+.services button{
+  width:100%;
+  height: 10%;
+  position:relative;
+  bottom:px;
+  border: none;
+  background-color: rgb(255, 183, 0);
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.services button:hover{
+  background-color: rgb(255, 145, 0);
+  transition-duration: 300ms;
+}
+#about button{
+  width:100%;
+  height: 10%;
+  position:relative;
+  border: none;
+  background-color: rgb(255, 183, 0);
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 .heading{
   text-align: center;
@@ -83,6 +112,7 @@ span{
   width: 50%;
 }
 .screen3-container{
+  padding-top: 100px;
   height: 100vh;
 }
 .screen4-container{
@@ -120,8 +150,8 @@ span{
   text-align: center;
   color: rgb(255, 179, 0);
   position: relative;
-  top:40%;
-  font-size:20px;
+  top:41%;
+  font-size:25px;
 }
 .foot-top{
   display: flex;
@@ -174,14 +204,25 @@ span{
     display: none;
   }
   .mainhead{
-    font-size:60px;
+    font-size:50px;
+  }
+  .services button{
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
   }
   .mainhead2{
-    font-size:12px;
+    font-size:13px;
+  }
+  #about button{
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
   }
   .flexer{
     flex-direction:column;
     padding-left: 30px;
+    
   }
   .screen2-container{
     height:auto;
@@ -189,7 +230,8 @@ span{
   .services{
     width: 90%;
     text-align: justify;
-    padding-top: 50px;
+    padding-top:50px;
+    height: 65vh;
   }
   .screen3-container{
     height: auto;
@@ -247,4 +289,54 @@ span{
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.mainhead,.mainhead2 {
+  animation: 4s anim-mainhead ease-out ;
+}
+
+@keyframes anim-mainhead {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+.sidebar-container{
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(143, 109, 14, 0.858);
+  text-align: center;
+  font-size:40px;
+  font-weight: 700;
+  line-height: 15vh;
+  padding-top:100px;
+}
+.sidebar-container li{
+  list-style-type: none;
+}
+.sidebar-container a{
+  color: white;
+  text-decoration: none;
+}
+.sidebar-container{
+  overflow: hidden;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index:888;
 }
