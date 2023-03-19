@@ -5,13 +5,11 @@ import Screen2 from './components/Screen2'
 import Screen3 from './components/Screen3'
 import Screen4 from './components/Screen4'
 import Screen5 from './components/Screen5'
-import Sidebar from './components/Sidebar'
 
 const Webview = () => {
   return (
     <div className='Mainview'>
         <div className='Nav-style'><Navbar/></div>
-        <Sidebar/>
         <Screen/>
         <Screen2/>
         <Screen3/>

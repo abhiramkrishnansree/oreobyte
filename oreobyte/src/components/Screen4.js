@@ -39,6 +39,7 @@ const Screen4 = () => {
         <Link to="/kuthara" className='a' style={{color:"white",fontSize:"18px",textDecoration:"none"}}><AiFillTwitterCircle size={30}/></Link>
         </div>
         <p>Company Oreobyte © 2023</p>
+        <p style={{fontSize:"9px"}}>Designed and devoloped by Abhiram Krishnan</p>
       </div>
     </div>
   )

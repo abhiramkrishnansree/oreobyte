@@ -200,7 +200,7 @@ span{
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar-menu{
+  .navbar-menu a{
     display: none;
   }
   .mainhead{
@@ -319,7 +319,7 @@ span{
   color: white;
   width: 100%;
   height: 100vh;
-  background-color:rgba(143, 109, 14, 0.858);
+  background-color:rgb(0, 0, 0);
   text-align: center;
   font-size:40px;
   font-weight: 700;
@@ -339,4 +339,13 @@ span{
   position: fixed;
   width: 100%;
   z-index:888;
+}
+
+.openBtn{
+  display:none;
+}
+@media only screen and (max-width: 600px){
+  .openBtn{
+    display:block;
+  }
 }
